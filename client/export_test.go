@@ -13,5 +13,5 @@ func ClientDone(c *Client[struct{}]) {
 }
 
 func ClientSend(c *Client[struct{}], msg *Message) {
-	c.send <- msg
+	c.Send <- msg
 }
